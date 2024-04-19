@@ -4,16 +4,17 @@ body {
   font-family: sans-serif;
 }
 
-.Button {
-  border: 1px solid #521751;
+.button {
+  border: 1px solid #715e71;
   font: inherit;
-  padding: 8px;
-  background-color: #521751;
+  padding: 0.5rem 1rem;
+  background-color: #715e71;
   color: white;
   cursor: pointer;
+  border-radius: 10px;
 }
 
-.Button:hover,
-.Button:active {
-  background-color: #fa923f;
+.button:hover,
+.button:active {
+  background-color: #403440;
 }

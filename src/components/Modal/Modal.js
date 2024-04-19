@@ -1,13 +1,13 @@
 import React from 'react'
 import './Modal.css'
 
-const modal = (props) => (
-  <div className="Modal">
+const Modal = ({ show, closed }) => (
+  <div className={`modal ${show ? 'open' : 'closed'}`}>
     <h1>A Modal</h1>
-    <button className="Button" onClick={props.closed}>
+    <button className="button" onClick={closed}>
       Dismiss
     </button>
   </div>
 )
 
-export default modal
+export default Modal

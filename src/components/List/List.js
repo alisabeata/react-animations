@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-
 import './List.css'
 
 class List extends Component {
@@ -27,7 +26,7 @@ class List extends Component {
     const listItems = this.state.items.map((item, index) => (
       <li
         key={index}
-        className="ListItem"
+        className="list-item"
         onClick={() => this.removeItemHandler(index)}
       >
         {item}
@@ -36,11 +35,11 @@ class List extends Component {
 
     return (
       <div>
-        <button className="Button" onClick={this.addItemHandler}>
+        <button className="button" onClick={this.addItemHandler}>
           Add Item
         </button>
         <p>Click Item to Remove.</p>
-        <ul className="List">{listItems}</ul>
+        <ul className="list">{listItems}</ul>
       </div>
     )
   }
